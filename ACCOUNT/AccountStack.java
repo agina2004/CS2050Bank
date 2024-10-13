@@ -1,7 +1,8 @@
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.io.PrintWriter;
 
-public class AccountStack {
+public class AccountStack implements Serializable {
     private ArrayList<ACCOUNT> stack;
 
     public AccountStack() {

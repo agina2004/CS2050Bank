@@ -1,9 +1,12 @@
-public class Checking extends ACCOUNT {
+import java.io.Serializable;
+
+public class Checking extends ACCOUNT  implements Serializable {
     public double overdraft;
 
     public Checking(long  ACCOUNTnumber,int ACCOUNTbalance, double interestRate,double overdraft) {
         super(ACCOUNTnumber,ACCOUNTbalance, interestRate, "Checking");
-        this.getOverdraft();
+        this.overdraft =overdraft;
+
     }
 
     public double getOverdraft() {

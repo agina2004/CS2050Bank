@@ -1,4 +1,6 @@
-public  class Savings extends ACCOUNT {
+import java.io.Serializable;
+
+public  class Savings extends ACCOUNT  implements Serializable {
     int initialdeposit;
     int period;
     int additionalcontribution;

@@ -1,4 +1,6 @@
-public class ACCOUNT {
+import java.io.Serializable;
+
+public class ACCOUNT implements Serializable {
 
     public String ACCOUNtype;
     public int ACCOUNTbalance;
